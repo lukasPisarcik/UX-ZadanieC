@@ -1,0 +1,123 @@
+:root {
+    --purple-color: #9156DD;
+  }
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    width: 100vw;
+    height: 100vh;
+}
+
+p, h1, h3, h2{
+    padding: 1px !important;
+    margin: 1px !important;
+}
+
+
+h2{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+h5{
+    color: var(--purple-color);
+    font-size: 0.9rem;
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.welcomeAndProfile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5rem 0 2rem 0 ;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    text-align: right;
+    align-items:flex-start;
+    height: 70%;
+}
+
+.secondaryText{
+    opacity: 0.6;
+    font-size: 0.7rem;
+}
+
+.boldText{
+    font-weight: 700;
+}
+
+.settings{
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    color: var(--purple-color);
+}
+
+.profilePicture{
+    width: 4rem;
+}
+
+.card{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    padding: 1.5rem;
+}
+
+.selectionBoxes{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.about{
+    flex:2;
+}
+
+.quizBoxes{
+    flex: 1;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.quizBoxes .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
