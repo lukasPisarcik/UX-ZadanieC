@@ -1,5 +1,6 @@
 :root {
     --purple-color: #9156DD;
+    --footer-color: #F6F6F6
   }
 
 body{
@@ -9,6 +10,10 @@ body{
     font-size: 14px;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 p, h1, h3, h2{
@@ -27,6 +32,10 @@ h3{
     font-weight: 900;
 }
 
+h4{
+    font-size: 1.7rem;
+}
+
 h5{
     color: var(--purple-color);
     font-size: 0.9rem;
@@ -36,7 +45,6 @@ h5{
     width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin: 0 auto;
 }
 
@@ -58,7 +66,8 @@ h5{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5rem 0 2rem 0 ;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
 }
 
 .profile{
@@ -105,6 +114,17 @@ h5{
 
 .about{
     flex:2;
+    background: url("/assets/coverPhoto.svg");
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.content{
+    padding: 3rem;
+    width: 60%;
 }
 
 .quizBoxes{
@@ -121,3 +141,76 @@ h5{
     gap: 2rem;
 }
 
+.mainButton{
+    border: none;
+    background-color: white;
+    border-radius: 3rem;
+    padding: 0.7rem 3rem;
+    color: var(--purple-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+.footer{
+    background-color: var(--footer-color);
+    width: 100%;
+    padding:2rem 0;
+    text-align: center;
+    color: var(--purple-color);
+    font-size: 0.7rem;
+}
+
+.footer p{
+    max-width: 80%;
+    opacity: 0.6;
+    margin: 0 auto !important;
+}
+
+.modal{
+    max-width: 70vw;
+    border: none;
+    text-align: center;
+}
+
+.modal::backdrop{
+    background: black;
+    opacity: 0.6;
+}
+
+.quizOption{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.quizOption .secondaryText{
+    text-align: left;
+    width: 70%;
+}
+
+.name{
+    display: flex;
+    gap: 1rem;
+}
+
+.language{
+    display: flex;
+}
+
+.colorText{
+    color: var(--purple-color);
+}
+
+.close{
+    text-align: right;
+    width: 100%;
+}
+
+.modal .heading{
+    font-size: 1.3rem;
+    margin: 1rem 0 !important;
+}
