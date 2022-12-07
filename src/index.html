@@ -90,6 +90,41 @@
             <button class="mainButton">Take quiz</button>
         </div>
     </dialog>
+
+    
+    <dialog class="modal card" id="profileSettings">
+        <div class="close">
+            <img src="/assets/close.svg" alt="" id="profileClose">            
+        </div>
+        <p class="boldText heading">Select quiz</p>
+        <div class="profileSettings">
+            <div>
+                <img src="/assets/editProfile.svg" alt="">
+                <p class="secondaryText">student</p>
+                <p class="boldText">Lukas Pisarcik</p>
+            </div>
+            <div class="input">
+                <div class="label">
+                    <p class="smallBoldText">email</p>
+                    <p class="colorText">change</p>
+                </div>
+                <input type="email" placeholder="luky.pisarcik@gmail.com">
+            </div>
+            <div class="input">
+                <div class="label">
+                    <p class="smallBoldText">password</p>
+                    <p class="colorText">change</p>
+                </div>
+                <input type="password" placeholder="***********">
+            </div>
+            <button class="mainButton">Save</button>
+            <button class="mainButton">Logout</button>
+        </div>
+    </dialog>
+
+
+
+
     <div class="container">
         <div class="navbar">
             <div class="logo">
@@ -108,7 +143,7 @@
                     <div>
                         <p class="secondaryText">student</p>
                         <p class="boldText">Lukas Pisarcik</p>
-                        <div class="settings">
+                        <div class="settings" id="profileArrow">
                             <img src="/assets/settings.svg" alt="">
                             <p class="colorText">Profile settings</p>
                         </div>

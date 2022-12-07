@@ -33,7 +33,7 @@ h3{
 }
 
 h4{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 h5{
@@ -203,6 +203,12 @@ h5{
 
 .colorText{
     color: var(--purple-color);
+    font-size: 0.7rem;
+}
+
+.smallBoldText{
+    font-size: 0.7rem;
+    font-weight: 700;
 }
 
 .close{
@@ -213,4 +219,37 @@ h5{
 .modal .heading{
     font-size: 1.3rem;
     margin: 1rem 0 !important;
+}
+
+.profileSettings{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-width: 20vw;
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileSettings img{
+    width: min-content;
+}
+
+.label{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+input{
+    border: none;
+    background-color: white;
+    width: 250px;
+    border-radius: 3rem;
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: left;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1));
 }
