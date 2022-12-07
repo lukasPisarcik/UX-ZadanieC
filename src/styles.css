@@ -199,8 +199,12 @@ h5{
 
 .language{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.language img{
+    width: 12px;
+}
 .colorText{
     color: var(--purple-color);
     font-size: 0.7rem;
@@ -258,4 +262,14 @@ input{
     width:85%;
     color: white;
     background-color: var(--purple-color);
+}
+
+.logout{
+    color: #FF0A0A;
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+.logout p{
+    opacity: 0.6;
 }
