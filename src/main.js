@@ -15,6 +15,8 @@ let arrowCreate = document.querySelector('#createArrow');
 let dialogCreate = document.querySelector('#createQuiz');
 let closeCreate = document.querySelector('#createClose');
 
+let createQuizBton = document.querySelector('#createQuizBtn');
+
 // join quiz
 arrowJoin.addEventListener('click', ()=>{
     dialogJoin.showModal();
@@ -50,3 +52,32 @@ arrowCreate.addEventListener('click', ()=>{
 closeCreate.addEventListener('click', ()=>{
     dialogCreate.close();
 });
+
+// popup
+createQuizBton.addEventListener('click', ()=>{
+    dialogCreate.close();
+    popUp();
+});
+
+function popUp(){
+    if (document.querySelector('.popup') !== null){
+        let div = document.querySelector('.popup');
+        div.parentNode.removeChild(div);
+    }
+
+    let helper = document.createElement('div');
+    helper.className = "popup";
+    helper.innerHTML = '<div class="popDiv"><img class="close-btn" src="/assets/close.svg" alt="" style="opacity: 0;"><p class="boldText">Quiz created</p><img src="/assets/close.svg" alt=""></div>';
+    document.body.appendChild(helper);
+
+    const timeout = setTimeout(() => {
+        if(!helper.classList.contains('hide')){
+            helper.classList.add('hide');
+        }
+    }, 5000);
+
+    document.querySelector('.close-btn').addEventListener('click', ()=>{
+        helper.classList.add('hide');
+        clearTimeout(timeout);
+    });
+}

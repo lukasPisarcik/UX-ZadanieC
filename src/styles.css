@@ -468,6 +468,46 @@ td{
     border-radius: 0.5rem;
 }
 
+.popup{
+    position: absolute;
+    top: 2rem;
+    left: 38%;
+    background-color: var(--footer-color);
+    border-left: #9156DD 5px solid;
+    border-radius: 5px;
+    width: 400px;
+    height: 110px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    animation: show_slide 1s ease forwards;
+}
+
+.hide{
+    animation: hide_slide 0.5s ease forwards;
+}
+
+@keyframes hide_slide {
+    100%{
+        transform: translateY(-130%);
+    }
+}
+
+@keyframes show_slide {
+    0%{
+        transform: translateY(-120%);
+    }
+}
+
+.popDiv{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popDiv img{
+    opacity: 0.6;
+}
 
 @media only screen and (max-width: 900px) {
     .selectionBoxes{
@@ -508,7 +548,5 @@ td{
     .quizOption .secondaryText{
         text-align: center;
     }
-
-
 
 }
