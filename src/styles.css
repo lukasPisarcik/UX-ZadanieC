@@ -299,16 +299,14 @@ input{
     align-items: center;
     width: 100%;
     align-self: center;
-}
-
-.center .mainButton{
-    width: 282px;
-    max-width: none;
+    margin-top: 7rem;
 }
 
 .flex-col{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -349,7 +347,7 @@ td{
     vertical-align: middle;
     text-align: center;
     border-bottom: 0.5px solid rgba(30, 30, 30, 0.1);
-    padding: 0.5rem 0;
+    padding: 0.5rem 0rem;
 }
 
 
