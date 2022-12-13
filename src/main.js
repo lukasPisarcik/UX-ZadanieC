@@ -17,6 +17,10 @@ let closeCreate = document.querySelector('#createClose');
 
 let createQuizBton = document.querySelector('#createQuizBtn');
 
+let menu = document.querySelector('#menu');
+let sidebar = document.querySelector('.sidebar');
+let overlay = document.querySelector('.overlay');
+
 // join quiz
 arrowJoin.addEventListener('click', ()=>{
     dialogJoin.showModal();
@@ -81,3 +85,9 @@ function popUp(){
         clearTimeout(timeout);
     });
 }
+
+// sidebar
+menu.addEventListener('click', ()=>{
+    sidebar.style.display = 'block';
+    overlay.style.display = 'block';
+});

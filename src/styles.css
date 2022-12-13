@@ -70,7 +70,7 @@ h5{
     width: 100%;
     position: fixed;
     background-color: white;
-    z-index: 100;
+    z-index: 1;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
 }
 
@@ -480,13 +480,14 @@ td{
 }
 
 .popup{
+    z-index: 5;
     position: fixed;
     top: 2rem;
-    left: 38%;
+    left: 40%;
     background-color: var(--footer-color);
     border-left: #9156DD 5px solid;
     border-radius: 5px;
-    width: 400px;
+    width: 300px;
     height: 110px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     animation: show_slide 1s ease forwards;
@@ -520,6 +521,41 @@ td{
     opacity: 0.6;
 }
 
+.sidebar{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    width: 25vw;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--purple-color);
+    color: white;
+    z-index: 10;
+    animation: showMenu 400ms ease forwards;
+}
+
+.overlay{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    opacity: 0.7;
+}
+
+@keyframes showMenu{
+    to{
+        right: 0;
+    }
+}
+
+
 @media only screen and (max-width: 900px) {
     .selectionBoxes{
         flex-direction: column !important;
@@ -532,9 +568,13 @@ td{
     .popup{
         left: 30%;
     }
+
+    .sidebar{
+        width: 60vw;
+    }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     .profile{
         display: flex;
         justify-content: center;
@@ -568,4 +608,7 @@ td{
         left: 10%;
     }
 
+    .sidebar{
+        width: 100vw;
+    }
 }
