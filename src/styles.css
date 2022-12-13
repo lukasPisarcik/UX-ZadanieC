@@ -53,14 +53,25 @@ h5{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-top: 5rem;
 }
 
-.navbar{
+.testik{
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
 }
 
 .logo{
@@ -469,7 +480,7 @@ td{
 }
 
 .popup{
-    position: absolute;
+    position: fixed;
     top: 2rem;
     left: 38%;
     background-color: var(--footer-color);
@@ -517,6 +528,10 @@ td{
         width: 85%;
         padding: 1rem;
     }
+
+    .popup{
+        left: 30%;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -547,6 +562,10 @@ td{
 
     .quizOption .secondaryText{
         text-align: center;
+    }
+
+    .popup{
+        left: 10%;
     }
 
 }
