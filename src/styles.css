@@ -198,6 +198,7 @@ h5{
     padding: 1rem 1.5rem;
     align-items: center;
     gap: 2rem;
+    border-bottom: 0.5px solid rgba(30, 30, 30, 0.1);;
 }
 
 .quizOption .secondaryText{
