@@ -11,6 +11,9 @@ let dialogHistory = document.querySelector('#testHistory');
 let arrowHistory = document.querySelector('#historyArrow');
 let closeHistory = document.querySelector('#historyClose');
 
+let arrowCreate = document.querySelector('#createArrow');
+let dialogCreate = document.querySelector('#createQuiz');
+let closeCreate = document.querySelector('#createClose');
 
 // join quiz
 arrowJoin.addEventListener('click', ()=>{
@@ -37,4 +40,13 @@ arrowHistory.addEventListener('click', ()=>{
 
 closeHistory.addEventListener('click', ()=>{
     dialogHistory.close();
+});
+
+// create quiz
+arrowCreate.addEventListener('click', ()=>{
+    dialogCreate.showModal();
+});
+
+closeCreate.addEventListener('click', ()=>{
+    dialogCreate.close();
 });
