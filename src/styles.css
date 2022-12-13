@@ -265,7 +265,7 @@ h5{
 input{
     border: none;
     background-color: white;
-    width: 250px;
+    width: 10rem;
     border-radius: 3rem;
     padding: 0.7rem 1rem;
     font-size: 0.8rem;
@@ -508,5 +508,7 @@ td{
     .quizOption .secondaryText{
         text-align: center;
     }
+
+
 
 }
