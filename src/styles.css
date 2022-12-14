@@ -589,6 +589,24 @@ td{
     .sidebar{
         width: 60vw;
     }
+
+    .vrProfile{
+        display: none;
+    }
+
+    .top{
+        flex-direction: column;
+        gap: 0.5rem;
+        width: fit-content;
+    }
+
+    .tasks{
+        order: 3;
+    }
+
+    .completed{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 800px) {
