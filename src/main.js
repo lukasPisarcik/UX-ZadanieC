@@ -1,25 +1,30 @@
+const arrowJoin = document.querySelector('#joinArrow');
+const dialogJoin = document.querySelector('#join');
+const closeJoin = document.querySelector('#joinClose');
+const joinBtn = document.querySelector('#joinBtn');
 
-let arrowJoin = document.querySelector('#joinArrow');
-let dialogJoin = document.querySelector('#join');
-let closeJoin = document.querySelector('#joinClose');
+const arrowProfile = document.querySelector('#profileArrow');
+const dialogProfile = document.querySelector('#profileSettings');
+const closeProfile = document.querySelector('#profileClose');
+const profileBtn = document.querySelector('#profileBtn');
 
-let arrowProfile = document.querySelector('#profileArrow');
-let dialogProfile = document.querySelector('#profileSettings');
-let closeProfile = document.querySelector('#profileClose');
+const dialogHistory = document.querySelector('#testHistory');
+const arrowHistory = document.querySelector('#historyArrow');
+const closeHistory = document.querySelector('#historyClose');
+const historyBtn = document.querySelector('#historyBtn');
 
-let dialogHistory = document.querySelector('#testHistory');
-let arrowHistory = document.querySelector('#historyArrow');
-let closeHistory = document.querySelector('#historyClose');
+const arrowCreate = document.querySelector('#createArrow');
+const dialogCreate = document.querySelector('#createQuiz');
+const closeCreate = document.querySelector('#createClose');
+const createBtn = document.querySelector('#createBtn');
 
-let arrowCreate = document.querySelector('#createArrow');
-let dialogCreate = document.querySelector('#createQuiz');
-let closeCreate = document.querySelector('#createClose');
+const createQuizBton = document.querySelector('#createQuizBtn');
 
-let createQuizBton = document.querySelector('#createQuizBtn');
+const menu = document.querySelector('#menu');
+const sidebar = document.querySelector('.sidebar');
+const overlay = document.querySelector('.overlay');
+const closeSidebar = document.querySelector('#closeSidebar');
 
-let menu = document.querySelector('#menu');
-let sidebar = document.querySelector('.sidebar');
-let overlay = document.querySelector('.overlay');
 
 // join quiz
 arrowJoin.addEventListener('click', ()=>{
@@ -30,6 +35,12 @@ closeJoin.addEventListener('click', ()=>{
     dialogJoin.close();
 })
 
+joinBtn.addEventListener('click', ()=>{
+    sidebar.style.display = 'none';
+    overlay.style.display = 'none';
+    dialogJoin.showModal();
+});
+
 // profile settings
 arrowProfile.addEventListener('click', ()=>{
     dialogProfile.showModal();
@@ -37,6 +48,12 @@ arrowProfile.addEventListener('click', ()=>{
 
 closeProfile.addEventListener('click', ()=>{
     dialogProfile.close();
+});
+
+profileBtn.addEventListener('click', ()=>{
+    sidebar.style.display = 'none';
+    overlay.style.display = 'none';
+    dialogProfile.showModal();
 });
 
 // quiz history
@@ -48,6 +65,12 @@ closeHistory.addEventListener('click', ()=>{
     dialogHistory.close();
 });
 
+historyBtn.addEventListener('click', ()=>{
+    sidebar.style.display = 'none';
+    overlay.style.display = 'none';
+    dialogHistory.showModal();
+});
+
 // create quiz
 arrowCreate.addEventListener('click', ()=>{
     dialogCreate.showModal();
@@ -55,6 +78,12 @@ arrowCreate.addEventListener('click', ()=>{
 
 closeCreate.addEventListener('click', ()=>{
     dialogCreate.close();
+});
+
+createBtn.addEventListener('click', ()=>{
+    sidebar.style.display = 'none';
+    overlay.style.display = 'none';
+    dialogCreate.showModal();
 });
 
 // popup
@@ -90,4 +119,9 @@ function popUp(){
 menu.addEventListener('click', ()=>{
     sidebar.style.display = 'block';
     overlay.style.display = 'block';
+});
+
+closeSidebar.addEventListener('click', ()=>{
+    sidebar.style.display = 'none';
+    overlay.style.display = 'none';
 });

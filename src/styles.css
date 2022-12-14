@@ -537,6 +537,18 @@ td{
     animation: showMenu 400ms ease forwards;
 }
 
+.flexCol{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
 .overlay{
     display: none;
     width: 100vw;
