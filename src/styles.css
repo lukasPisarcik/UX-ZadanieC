@@ -48,6 +48,11 @@ h5{
     font-size: 0.9rem;
 }
 
+#menu, #profileArrow, #joinArrow, #createArrow, #historyArrow, #joinClose, #historyClose, #createClose, #profileClose, #closeSidebar,  #joinBtn, #createBtn, #historyBtn, #profileBtn{
+    cursor: pointer;
+}
+
+
 .container{
     width: 80%;
     display: flex;
