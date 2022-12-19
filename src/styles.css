@@ -139,7 +139,7 @@ h5{
 
 .about{
     flex:2;
-    background: url("/assets/coverPhoto.svg");
+    background: url("assets/coverPhoto.svg");
     background-size: cover;
     color: white;
     display: flex;
@@ -416,7 +416,7 @@ td{
     flex-direction: column; 
     justify-content: center; 
     align-items: center;
-    background-image: url(/assets/bg.png);
+    background-image: url(assets/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;    
